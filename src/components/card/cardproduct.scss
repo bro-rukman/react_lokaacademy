@@ -1,0 +1,56 @@
+.card {
+  width: 348px;
+  height: auto;
+  background-color: white;
+  padding: 8px;
+  border: 0.5px solid gray;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  .cardImage {
+    width: 337px;
+    height: 226px;
+    border-radius: 8px;
+  }
+  .buttonBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h3 {
+    margin: 4px 0;
+  }
+  p {
+    margin: 4px 0;
+  }
+}
+.cardHmi {
+  width: 348px;
+  height: auto;
+  background-color: white;
+  padding: 8px;
+  border: 0.5px solid gray;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  .flexItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    .avatar {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .calendar {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+  }
+  h3 {
+    margin: 4px 0;
+  }
+  p {
+    margin: 4px 0;
+    padding-bottom: 12px;
+  }
+}
