@@ -1,0 +1,44 @@
+.header {
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(90deg, #008ecb, #5b5b5b);
+  margin-bottom: 20px;
+  padding: 8px 20px;
+  .headerInside {
+    // background-color: blue;
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .container_left {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: baseline;
+      .logo {
+        margin: 10px;
+      }
+      .logo_names {
+        margin: 10px;
+        color: white;
+      }
+    }
+    .container_right {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .linked {
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+      }
+    }
+  }
+}

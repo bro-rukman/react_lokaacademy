@@ -3,12 +3,26 @@ import { HashRouter, Route } from "react-router-dom";
 import { Home } from "../pages/Home";
 import { Detail } from "../pages/Detail";
 import { Checkout } from "../pages/Checkout";
+import { Type } from "../pages/Type";
+import { AboutUs } from "../pages/AboutUs";
 const router = [
   {
     type: "public",
     path: "/",
     exact: true,
     component: Home,
+  },
+  {
+    type: "public",
+    path: "/type",
+    exact: true,
+    component: Type,
+  },
+  {
+    type: "public",
+    path: "/about_us",
+    exact: true,
+    component: AboutUs,
   },
   {
     type: "public",
