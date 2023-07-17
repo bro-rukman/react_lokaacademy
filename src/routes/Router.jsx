@@ -1,10 +1,11 @@
 import React from "react";
 import { HashRouter, Route } from "react-router-dom";
-import { Home } from "../pages/Home";
-import { Detail } from "../pages/Detail";
-import { Checkout } from "../pages/Checkout";
-import { Type } from "../pages/Type";
-import { AboutUs } from "../pages/AboutUs";
+import { Home } from "../pages/Home/Home";
+import { Detail } from "../pages/Detail/Detail";
+import { Checkout } from "../pages/Checkout/Checkout";
+import { Type } from "../pages/Type/Type";
+import { AboutUs } from "../pages/AboutUs/AboutUs";
+import { DetailProduct } from "../pages/Detail/DetailProduct";
 const router = [
   {
     type: "public",
@@ -26,9 +27,9 @@ const router = [
   },
   {
     type: "public",
-    path: "/detail",
+    path: "/detail/:id",
     exact: true,
-    component: Detail,
+    component: DetailProduct,
   },
   {
     type: "public",

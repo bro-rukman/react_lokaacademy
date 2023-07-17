@@ -1,7 +1,16 @@
 import React from "react";
 import "./cardproduct.scss";
 import { ButtonPrimary } from "../button/ButtonPrimary";
-export const CardProduct = ({ img, title, desc, bed, titleBottom }) => {
+import { Link } from "react-router-dom";
+export const CardProduct = ({
+  id,
+  img,
+  title,
+  desc,
+  bed,
+  titleBottom,
+  titleButton,
+}) => {
   return (
     <div className="card">
       <div className="rounding">
@@ -23,7 +32,9 @@ export const CardProduct = ({ img, title, desc, bed, titleBottom }) => {
           <h3>{titleBottom}</h3>
         </div>
         <div>
-          <ButtonPrimary title={"Details"} />
+          <Link to={`/detail/${id}`}>
+            <ButtonPrimary title={titleButton} />
+          </Link>
         </div>
       </div>
     </div>
