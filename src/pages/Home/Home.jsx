@@ -5,6 +5,8 @@ import Header from "../../components/header/Header";
 import { Pilihan } from "../../components/pilihan/Pilihan";
 import { Hero } from "../../components/hero/Hero";
 import { SliderImage } from "../../components/slider/Slider";
+import { postData } from "../../services/serviceData";
+import { PostData } from "../../components/post_data/PostData";
 
 export const Home = () => {
   // const date = new Date();
@@ -12,12 +14,13 @@ export const Home = () => {
   // const month = monthNames[date.getMonth() + 1];
   // const year = date.getFullYear();
   return (
-    <div className="">
+    <div className="home">
       <Header />
       <Hero />
-      <SliderImage />
-      {/* <Pilihan /> */}
-
+      {/* <SliderImage /> */}
+      <Pilihan />
+      <PostData />
+      {/* <button onClick={() => postData()}>post data</button> */}
       {/* <CardHmi
         img={image}
         title={"Amazing Home for Family"}
