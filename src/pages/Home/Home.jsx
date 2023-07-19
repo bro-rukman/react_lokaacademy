@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Home.scss";
 
 import Header from "../../components/header/Header";
 import { Pilihan } from "../../components/pilihan/Pilihan";
 import { Hero } from "../../components/hero/Hero";
+import { SliderImage } from "../../components/slider/Slider";
 
 export const Home = () => {
   // const date = new Date();
@@ -14,7 +15,8 @@ export const Home = () => {
     <div className="">
       <Header />
       <Hero />
-      <Pilihan />
+      <SliderImage />
+      {/* <Pilihan /> */}
 
       {/* <CardHmi
         img={image}

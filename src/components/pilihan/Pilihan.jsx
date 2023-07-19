@@ -1,30 +1,49 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./pilihan.scss";
-import { pilihanCard } from "../../database/dataproduct";
 import { CardProduct } from "../card/cardproduct";
+import { getAllDataProduct } from "../../services/serviceData";
 export const Pilihan = ({}) => {
+  const [dataCard, setDataCard] = useState([]);
+  useEffect(() => {
+    getAllDataProduct()
+      .then((res) => {
+        setDataCard(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+    return () => {};
+  }, []);
+
   return (
     <div className="pilihan_container">
       <div className="pilihan_text">
         <h1>Pilihan Tipe</h1>
         <p>hadir untuk temukan fasilitas terbaik untuk anda</p>
       </div>
-      <div className="container_card">
-        {pilihanCard.map((items) => {
-          return (
-            <CardProduct
-              id={items.id}
-              img={items.image}
-              title={items.title}
-              desc={items.desc}
-              bed={items.bed}
-              titleBottom={items.titleBottom}
-              titleButton={"Details"}
-            />
-          );
-        })}
+      <div className="container_grid">
+        {dataCard?.length > 0 ? (
+          <div className="container_card">
+            {dataCard?.map((items) => {
+              return (
+                <div className="items_grid">
+                  <CardProduct
+                    id={items.id}
+                    img={items.image}
+                    title={items.title}
+                    desc={items.desc}
+                    bed={items.bed}
+                    titleBottom={items.titleBottom}
+                    titleButton={"Details"}
+                  />
+                </div>
+              );
+            })}
+          </div>
+        ) : (
+          <div className="no_data">No data</div>
+        )}
       </div>
-      <div></div>
     </div>
   );
 };

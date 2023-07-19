@@ -4,6 +4,8 @@ import { pilihanCard } from "../../database/dataproduct";
 export const DetailProduct = () => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
+  const data = pilihanCard.find((f) => f.id == id);
+  console.log(data);
   useEffect(() => {
     const x = pilihanCard?.find((f) => {
       console.log(f);

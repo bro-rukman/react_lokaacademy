@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "image": "/images/image.png",
+            "title": "Amazing Home for Family",
+            "desc": "Fulfill your career dreams, enjoy all the achievements of the city center",
+            "bed": 3,
+            "titleBottom": "Single Family Home"
+        },
+        {
+            "id": 2,
+            "image": "/images/bg_zoom.jpeg",
+            "title": "Amazing Home for Family",
+            "desc": "Fulfill your career dreams, enjoy all the achievements of the city center",
+            "bed": 3,
+            "titleBottom": "Single Family Home"
+        },
+        {
+            "id": 3,
+            "image": "/images/image.png",
+            "title": "Amazing Home for Family",
+            "desc": "Fulfill your career dreams, enjoy all the achievements of the city center",
+            "bed": 3,
+            "titleBottom": "Single Family Home"
+        },
+        {
+            "id": 4,
+            "image": "/images/bg_zoom.jpeg",
+            "title": "Amazing Home for Family",
+            "desc": "Fulfill your career dreams, enjoy all the achievements of the city center",
+            "bed": 3,
+            "titleBottom": "Single Family Home"
+        },
+        {
+            "id": 5,
+            "image": "/images/image.png",
+            "title": "Amazing Home for Family",
+            "desc": "Fulfill your career dreams, enjoy all the achievements of the city center",
+            "bed": 3,
+            "titleBottom": "Single Family Home"
+        },
+        {
+            "id": 6,
+            "image": "/images/bg_zoom.jpeg",
+            "title": "Amazing Home for Family",
+            "desc": "Fulfill your career dreams, enjoy all the achievements of the city center",
+            "bed": 3,
+            "titleBottom": "Single Family Home"
+        }
+    ],
+    "posts": []
+}
