@@ -93,34 +93,16 @@
   ],
   "posts": [
     {
-      "name": "John",
-      "age": "40",
-      "address": "Jakarta",
-      "id": 1
-    },
-    {
-      "name": "admin",
-      "age": "11",
-      "address": "Indonesia",
+      "name": "Paul",
+      "age": 20,
+      "address": "Australia",
       "id": 2
     },
     {
-      "name": "Bryan Kobee",
-      "age": "33",
-      "address": "Indonesia",
-      "id": 11
-    },
-    {
-      "name": "Tomat",
-      "age": "44",
-      "address": "Jakarta",
-      "id": 12
-    },
-    {
-      "name": "endang",
-      "age": "26",
-      "address": "Jakarta",
-      "id": 13
+      "name": "asdfkklsdf",
+      "age": 30,
+      "address": "japan",
+      "id": 3
     }
   ]
 }

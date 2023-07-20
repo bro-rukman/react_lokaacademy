@@ -1,0 +1,9 @@
+###get all data 
+GET http://localhost:3004/data
+
+### post data
+POST http://localhost:3004/posts
+Content-Type:application/json
+Accept: application/json
+Authorization: none
+

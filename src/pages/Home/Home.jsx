@@ -1,14 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./Home.scss";
 
 import Header from "../../components/header/Header";
 import { Pilihan } from "../../components/pilihan/Pilihan";
 import { Hero } from "../../components/hero/Hero";
-import { SliderImage } from "../../components/slider/Slider";
-import { postData } from "../../services/serviceData";
 import { PostData } from "../../components/post_data/PostData";
 
 export const Home = () => {
+  // useEffect(() => {
+  //   handlePut();
+  //   return () => {};
+  // }, []);
+
   // const date = new Date();
   // const day = date.getDate();
   // const month = monthNames[date.getMonth() + 1];
@@ -20,6 +23,7 @@ export const Home = () => {
       {/* <SliderImage /> */}
       <Pilihan />
       <PostData />
+
       {/* <button onClick={() => postData()}>post data</button> */}
       {/* <CardHmi
         img={image}
