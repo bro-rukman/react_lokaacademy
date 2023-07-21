@@ -2,11 +2,15 @@ import React, { useEffect, useState } from "react";
 import "./pilihan.scss";
 import { CardProduct } from "../card/cardproduct";
 import { getAllDataProduct } from "../../services/serviceData";
+import { useDispatch } from "react-redux";
+import { DataAction } from "../../state/reducers/dataReducer";
 export const Pilihan = ({}) => {
+  const dispatch = useDispatch();
   const [dataCard, setDataCard] = useState([]);
   useEffect(() => {
     getAllDataProduct()
       .then((res) => {
+        dispatch(DataAction.addDataCard(res));
         setDataCard(res);
       })
       .catch((err) => {
